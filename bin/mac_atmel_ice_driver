@@ -1,0 +1,6 @@
+
+sudo mkdir -p /System/Library/Extensions/AtmelICE.kext/Contents
+curl https://gist.githubusercontent.com/carlossless/31dc73963d589f18a20b582e787b6206/raw/Info.plist > /System/Library/Extensions/AtmelICE.kext/Contents/Info.plist
+sudo chown -R root:wheel /System/Library/Extensions/AtmelICE.kext`
+sudo chmod -R 755 /System/Library/Extensions/AtmelICE.kext
+sudo kextcache -system-caches
